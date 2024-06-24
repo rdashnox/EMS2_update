@@ -38,18 +38,7 @@ public class JFrameLeaveApplication extends javax.swing.JFrame {
         customBoxReasons ();
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
-    
-    private void buttonVisibility() {
-      String designation = EmpAttendance.UserDesignation;
-      if (designation.equals("Employee")) {
-          jButton4Approve.setVisible(false);
-          jButton5Reject.setVisible(false);
-      }else{
-          jButton4Approve.setVisible(true);
-          jButton5Reject.setVisible(true);
-      }
-  }
-    
+       
     private void customBoxReasons() {
         // Initialize JComboBox for month selection
         ArrayList<String> reason = new ArrayList<>();
@@ -912,5 +901,15 @@ public class JFrameLeaveApplication extends javax.swing.JFrame {
     private java.awt.Label labelCompany;
     private javax.swing.JLabel labelLogo;
     // End of variables declaration//GEN-END:variables
-
+ 
+private void buttonVisibility() {
+      String designation = EmpAttendance.UserDesignation;
+      if (designation.equals("Employee")) {
+          jButton4Approve.setVisible(false);
+          jButton5Reject.setVisible(false);
+      }else{
+          jButton4Approve.setVisible(true);
+          jButton5Reject.setVisible(true);
+      }
+  }
 }
