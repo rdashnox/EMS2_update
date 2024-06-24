@@ -1106,7 +1106,7 @@ public class JFrameEmpInfo extends javax.swing.JFrame {
                   search(String.valueOf(empID));
                     jTextField1Search.setVisible(false);
                     jLabel1Search.setVisible(false);
-                    jButtonViewInformation.setAlignmentY(CENTER_ALIGNMENT);
+                    jComboBox1Designation.setEnabled(false);
                   for(JButton jButton : jButtons){
                       jButton.setVisible(false);
                   }
@@ -1114,6 +1114,7 @@ public class JFrameEmpInfo extends javax.swing.JFrame {
                   loadTable();
                     jTextField1Search.setVisible(true);
                     jLabel1Search.setVisible(true);
+                    jComboBox1Designation.setEnabled(true);
                   for(JButton jButton : jButtons){
                       jButton.setVisible(true);
                       

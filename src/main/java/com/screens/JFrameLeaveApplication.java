@@ -36,6 +36,7 @@ public class JFrameLeaveApplication extends javax.swing.JFrame {
         setExtendedState(JFrame.MAXIMIZED_BOTH);
         setResizable(false);
         customBoxReasons ();
+        buttonVisibility();
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
        
